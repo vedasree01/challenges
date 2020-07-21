@@ -5,73 +5,6 @@ body
     font-size: 13px;
     background-color: #ECF2F8;
 }
-
-/*Sections and columns*/
-.content
-{
-    width: 80%;
-    overflow: hidden;
-    border-radius: 15px 15px 15px 15px;
-}
-.image-column
-{
-    text-align: left;
-    padding: 0px;
-}
-.text-column
-{
-    padding: 35px 45px 0 35px;
-    background-color: #fff;
-    text-align: justify;
-}
-.article-footer
-{
-    position: relative;
-}
-
-
-/*Images*/
-
-.side-image
-{
-    width: 100%;
-}
-.profile-photo
-{
-    border-radius: 100%;
-    width: 10%;
-    float: left;
-    margin-right: 4%;
-}
-.share-icon
-{
-    box-sizing: content-box;
-    padding: 10px;
-    background: #ECF2F8;
-    border-radius: 100%;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-}
-
-
-/*Text*/
-
-.section-heading
-{
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #4E5765;
-}
-
-.section-text
-{
-    color: #6D7F97;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-}
-
 figure
 {
     margin: 0px;
@@ -91,3 +24,104 @@ time
     color: #9EAFC2;
     font-weight: 500;
 }
+
+/*Sections and columns*/
+
+.content
+{
+    width: 80%;
+    border-radius: 15px 15px 15px 15px;
+    margin: auto;
+    position: relative;
+}
+.image-column
+{
+    text-align: left;
+    padding: 0px;
+    overflow: hidden;
+}
+.text-column
+{
+    padding: 35px 45px 0 35px;
+    background-color: #fff;
+    text-align: justify;
+}
+.article-footer
+{
+    position: relative;
+}
+#share-section
+{
+    display: inline-block;
+    background-color: #49556d;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    bottom: 95px;
+    right: -61px;
+    visibility: hidden;
+}
+
+/*Images*/
+
+.side-image
+{
+    width: 100%;
+    height: 100%;
+}
+.profile-photo
+{
+    border-radius: 100%;
+    width: 10%;
+    float: left;
+    margin-right: 4%;
+}
+.share-icon
+{
+    box-sizing: content-box;
+    padding: 10px;
+    background: #ECF2F8;
+    border-radius: 100%;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+.social-media-icon
+{
+    margin-left: 1rem;
+}
+
+
+/*Text*/
+
+.section-heading
+{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #4E5765;
+}
+
+.section-text
+{
+    color: #6D7F97;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+.share-text
+{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #6D7F97;
+    position: relative;
+    bottom: 2px;
+}
+
+#share-button
+{
+    border:0;
+    background-color: #fff;
+}
+

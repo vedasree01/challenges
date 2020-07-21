@@ -21,10 +21,10 @@
 <body>
 
   <article class="content">
-    <div class="container-fluid">
+      <div class="container-fluid">
       <div class="row">
-        <div class="col-5 image-column"><img class="side-image" src="images/drawers.jpg" alt="furniture: drawers"></div>
-        <div class="col-7 text-column">
+        <div class="col-lg-5 image-column"><img class="side-image" src="images/drawers.jpg" alt="furniture: drawers"></div>
+        <div class="col-lg-7 text-column">
           <h1 class="section-heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
 
           <p class="section-text">Ever been in a room and felt like something was missing? Perhaps
@@ -38,27 +38,29 @@
               <time datetime="2020-06-28">28th June, 2020</time></p>
             </figcaption>
 
-            <img class="share-icon" src="images/icon-share.svg" alt="share">
+            <button onclick="showShareSection()" id="share-button"><img class="share-icon" src="images/icon-share.svg" alt="share"></button>
           </figure>
 
 
-
-
           <!--The following section should show up only on clicking the share button-->
-          <!--<section class="share-section">
-            SHARE
-            <i class="social-media-icon fa fa-facebook"></i>
-            <i class="social-media-icon fa fa-pinterest"></i>
-            <i class="social-media-icon fa fa-twitter"></i>
-          </section>-->
+          <section id="share-section">
+            <span class="share-text">SHARE</span>
+            <i class="social-media-icon fa fa-facebook-square fa-2x"></i>
+            <i class="social-media-icon fa fa-pinterest fa-2x"></i>
+            <i class="social-media-icon fa fa-twitter fa-2x"></i>
+          </section>
         </div>
       </div>
-    </div>
+      </div>
     </article>
+
 
     <!--Bootstrap JS links-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!--Local JavaScript-->
+    <script src="script/script.js"></script>
 </body>
 </html>

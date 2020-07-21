@@ -14,7 +14,7 @@ The designs were created to the following widths:
 - Grayish Blue: #9EAFC2
 - Light Grayish Blue: #ECF2F8
 
-
+#49556d
 ## Typography
 
 ### Body Copy
