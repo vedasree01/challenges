@@ -25,28 +25,37 @@ time
     font-weight: 500;
 }
 
+
 /*Sections and columns*/
 
 .content
 {
-    width: 80%;
-    border-radius: 15px 15px 15px 15px;
     margin: auto;
     position: relative;
+    border-collapse: separate;
+    margin-top: 230px;
+}
+
+.container-fluid
+{
+    width: 80%;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #fff;
+    overflow: hidden;
 }
 .image-column
 {
     text-align: left;
     padding: 0px;
-    overflow: hidden;
 }
 .text-column
 {
     padding: 35px 45px 0 35px;
     background-color: #fff;
     text-align: justify;
+    overflow: visible;
 }
-.article-footer
+.article-footer, #share-section, .share-text
 {
     position: relative;
 }
@@ -57,11 +66,37 @@ time
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 10px 10px 10px 10px;
-    position: absolute;
-    bottom: 95px;
-    right: -61px;
     visibility: hidden;
+    -webkit-box-shadow: 0px 11px 10px 1px rgba(225,234,241,1);
+    -moz-box-shadow: 0px 11px 10px 1px rgba(225,234,241,1);
+    box-shadow: 0px 11px 10px 1px rgba(225,234,241,1);
+    top: -70px;
+    left: 155px;
 }
+
+#share-icon-and-section
+{
+    position: absolute;
+    right: 220px;
+    top: 513px;
+}
+
+
+/*Adding the Arrow at the end of share section*/
+
+#share-section::after
+{
+  content: " ";
+  position: absolute;
+  color: #49556d;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #49556d transparent transparent transparent;
+}
+
 
 /*Images*/
 
@@ -77,15 +112,12 @@ time
     float: left;
     margin-right: 4%;
 }
-.share-icon
+#share-icon
 {
     box-sizing: content-box;
     padding: 10px;
     background: #ECF2F8;
     border-radius: 100%;
-    position: absolute;
-    right: 0px;
-    top: 10px;
 }
 .social-media-icon
 {
@@ -102,7 +134,6 @@ time
     margin-bottom: 1rem;
     color: #4E5765;
 }
-
 .section-text
 {
     color: #6D7F97;
@@ -113,9 +144,7 @@ time
 {
     font-size: 18px;
     letter-spacing: 3px;
-    font-weight: 500;
     color: #6D7F97;
-    position: relative;
     bottom: 2px;
 }
 
@@ -125,3 +154,111 @@ time
     background-color: #fff;
 }
 
+
+/*Responsiveness*/
+
+@media (max-width: 1175px) and (min-width: 1170px)
+{
+    #share-icon-and-section
+    {
+        top: 310px;
+    }
+}
+@media (max-width: 1170px) and (min-width: 991px)
+{
+    #share-icon-and-section
+    {
+        top: 331px;
+    }
+}
+@media (max-width: 991px) and (min-width: 425px)
+{
+    #share-icon-and-section
+    {
+        top: 780px;
+    }
+}
+
+/*Mobile devices*/
+
+@media (max-width: 425px)
+{
+    body
+    {
+        padding: 20px;
+    }
+    figcaption
+    {
+        padding-top: 2px;
+    }
+    .profile-photo
+    {
+        width: 15%;
+    }
+    .content
+    {
+        margin: 0;
+    }
+    .container-fluid
+    {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .section-heading
+    {
+        font-size: 20px;
+    }
+    #share-icon-and-section
+    {
+        width: 100%;
+        right: -30px;
+        top: 620px;
+    }
+
+    #share-section
+    {
+        display: inline-block;
+        position: static;
+        width: 90%;
+        border-radius: 0 0 15px 15px;
+    }
+    #share-icon
+    {
+        position: absolute;
+        top: 9px;
+        right: 90px;
+    }
+    .share-text
+    {
+        padding-top: 12px;
+    }
+    .social-media-icon
+    {
+        font-size: 1.3rem;
+    }
+    .text-column
+    {
+        text-align: left;
+    }
+    .share-text
+    {
+        font-size: 15px;
+    }
+
+    /*Remove the tooltip arrow*/
+
+    #share-section::after
+    {
+        border: 0;
+    }
+
+}
+
+@media (max-width: 375px)
+{
+    #share-icon-and-section
+    {
+        top: 587px;
+    }
+}

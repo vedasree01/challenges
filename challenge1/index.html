@@ -37,22 +37,22 @@
               <p>Michelle Appleton<br>
               <time datetime="2020-06-28">28th June, 2020</time></p>
             </figcaption>
-
-            <button onclick="showShareSection()" id="share-button"><img class="share-icon" src="images/icon-share.svg" alt="share"></button>
           </figure>
 
-
-          <!--The following section should show up only on clicking the share button-->
-          <section id="share-section">
-            <span class="share-text">SHARE</span>
-            <i class="social-media-icon fa fa-facebook-square fa-2x"></i>
-            <i class="social-media-icon fa fa-pinterest fa-2x"></i>
-            <i class="social-media-icon fa fa-twitter fa-2x"></i>
-          </section>
         </div>
       </div>
       </div>
     </article>
+
+    <div id="share-icon-and-section">
+      <section id="share-section">
+              <span class="share-text">SHARE</span>
+              <i class="social-media-icon fa fa-facebook-square fa-2x"></i>
+              <i class="social-media-icon fa fa-twitter fa-2x"></i>
+              <i class="social-media-icon fa fa-pinterest fa-2x"></i>
+      </section>
+      <button onclick="showShareSection()" id="share-button"><i id="share-icon" class="fa fa-share"></i></button>
+    </div>
 
 
     <!--Bootstrap JS links-->
