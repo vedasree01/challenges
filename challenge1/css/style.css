@@ -19,12 +19,17 @@ figcaption p
     font-weight: 700;
     color: #4E5765;
 }
-time
+time, footer
 {
     color: #9EAFC2;
     font-weight: 500;
 }
-
+footer
+{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
 
 /*Sections and columns*/
 
